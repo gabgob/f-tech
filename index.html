@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      html,
+      body {
+        font-family: "K2D", sans-serif;
+      }
+
+      .fa-gears,
+      .fa-car {
+        font-size: 200px;
+      }
+
+      .fa-leaf {
+        font-size: 120px;
+        height: 148px;
+      }
+
+      .fa-phone,
+      .fa-envelope {
+        font-size: 25px;
+      }
+
+      nav {
+        background-color: black;
+        color: white;
+      }
+
+      .banner-img {
+        width: 100%;
+        height: 800px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("/car.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+        position: relative;
+      }
+
+      .banner-content {
+        position: absolute;
+        left: 30%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      .grid-container {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+
+      .w3-third {
+        padding: 0 50px;
+      }
+
+      .footer-title {
+        text-decoration: underline;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .w3-jumbo {
+          font-size: 3em !important;
+        }
+
+        .slogan {
+          font-size: 1.8em !important;
+        }
+
+        .w3-bar-item {
+          text-align: center;
+        }
+
+        .w3-bar {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+
+        /* Ensure the navigation items are stacked for small screens */
+        #navDemo a {
+          padding: 15px;
+          text-align: center;
+        }
+
+        /* Adjust the banner content */
+        .banner-content {
+          left: 50%;
+          top: 200px;
+          transform: translate(-50%, -30%);
+          color: white;
+        }
+
+        /* Make banner image smaller for tablets */
+        .banner-img {
+          height: 500px;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .w3-bar {
+          display: flex;
+          justify-content: center;
+        }
+        .w3-bar-item {
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .banner-img {
+          height: 500px;
+        }
+
+        .banner-content {
+          left: 50%;
+          top: 200px;
+          transform: translate(-50%, -30%);
+          color: white;
+        }
+
+        .w3-jumbo {
+          font-size: 2.2em !important;
+          white-space: nowrap;
+        }
+
+        .slogan {
+          font-size: 1.5em !important;
+        }
+
+        .w3-half {
+          padding: 0;
+        }
+
+        .w3-bar {
+          display: block;
+        }
+
+        /* Ensure all items in services stack vertically */
+        .w3-third {
+          width: 100%;
+        }
+
+        .w3-half {
+          padding: 0;
+        }
+
+        .w3-twothird {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-top">
+      <nav class="w3-bar w3-card w3-left-align w3-large ">
+        <a
+          class="w3-bar-item w3-button w3-hide-large w3-right w3-padding-large w3-hover-white w3-large"
+          href="javascript:void(0);"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">Start</a>
+        <div class="w3-hide-medium">
+          <a
+          href="#services"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        >
+          Våra tjänster
+        </a>
+        </div>
+      </nav>
+
+      <nav
+        id="navDemo"
+        class="w3-bar-block w3-hide w3-hide-large w3-large"
+      >
+        <a href="#services" class="w3-bar-item w3-button w3-padding-large"
+          >Våra tjänster</a
+        >
+      </nav>
+    </div>
+
+    <header id="start" class="w3-center header-container">
+      <div class="banner-img"></div>
+      <div class="banner-content">
+        <h1 class="w3-margin w3-jumbo">FTEK - Motoroptimering</h1>
+        <h2 class="w3-xxlarge slogan">Maxa prestandan</h2>
+        <h2 class="w3-xxlarge slogan">Minska förbrukningen</h2>
+        <h2 class="w3-xxlarge slogan">Motoroptimering i världsklass</h2>
+        <button
+          class="w3-button w3-deep-orange w3-padding-large w3-large w3-margin-top"
+        >
+          Kontakta oss
+        </button>
+      </div>
+    </header>
+
+    <div id="services">
+      <h3 class="w3-center w3-xxlarge">Våra tjänster</h3>
+      <div
+        class="w3-container w3-row-padding w3-center grid-container"
+        style="margin-top: 32px"
+      >
+        <div class="w3-third">
+          <img src="stage-1.png" width="250" alt="" />
+          <p class="w3-xlarge">Steg 1 Optimering</p>
+          <p class="w3-large">
+            Steg 1 Optimering förbättrar din bils prestanda genom en säker
+            justering av motorstyrningen (ECU). Du får mer effekt, bättre
+            vridmoment och lägre bränsleförbrukning – utan fysiska
+            modifieringar. Perfekt för dig som vill ha en piggare bil med
+            snabbare respons och mjukare acceleration. Tryggt, effektivt och
+            enkelt att återställa.
+          </p>
+          <b>Pris: 12345 SEK</b>
+        </div>
+        <div class="w3-third">
+          <img src="stage-2.png" width="250" alt="" />
+          <p class="w3-xlarge">Steg 2 Optimering</p>
+          <p class="w3-large">
+            Steg 2 Optimering tar din bil till nästa nivå genom en kombination
+            av mjukvara och hårdvara. Vi justerar motorstyrningen (ECU) och
+            kompletterar med delar som sportluftfilter, downpipe eller
+            intercooler. Resultatet? Märkbart högre effekt, bättre gasrespons
+            och en sportigare körupplevelse – optimerat för både gata och bana.
+          </p>
+          <b>Pris: 9999 SEK</b>
+        </div>
+        <div class="w3-third w3-margin-top">
+          <i class="fa fa-leaf w3-text-red"></i>
+          <p class="w3-xlarge">Eco Optimering</p>
+          <p class="w3-large">
+            Vår Eco Optimering är en hållbar lösning som fokuserar på att minska
+            bränsleförbrukningen och utsläppen utan att ge avkall på prestandan.
+            Genom att finjustera motorstyrningen (ECU) optimerar vi din bil för
+            bättre bränsleeffektivitet, vilket ger längre räckvidd per liter och
+            en mer miljövänlig körning. Perfekt för dig som vill köra smartare
+            och bidra till en bättre framtid, samtidigt som du sparar pengar på
+            drivmedel.
+          </p>
+          <b>Pris: 9999 SEK</b>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-third w3-center">
+          <i class="fa fa-gears w3-padding-64 w3-text-red"></i>
+        </div>
+        <div class="w3-twothird">
+          <h1>Växellåda</h1>
+          <h5 class="w3-padding-32">
+            Växellådsoptimering för Audi, BMW, VW, Skoda och fler – Upplev
+            skillnaden
+          </h5>
+          <p>
+            Ge din bil en snabbare, smidigare och mer responsiv körupplevelse
+            med vår professionella växellådsoptimering. Vi optimerar växellådor
+            för Audi, Skoda, Seat, VW samt BMW E-, F- och G-serier.
+            DSG-optimering för VAG-fordon DSG-växellådan (Direct Shift Gearbox)
+            är hjärtat i många VAG-fordon. För bästa prestanda rekommenderar vi
+            att kombinera DSG-optimering med motoroptimering. Resultatet är
+            snabbare växlingar, mjukare acceleration och en mer följsam
+            körkänsla. BMW, Jaguar, Jeep, Dodge – Maximera prestandan Vi
+            optimerar BMW:s dubbelkopplingslådor (DCT) samt de populära
+            ZF-automatlådorna 6HP, 8HP och 8HP70 – även vanligt förekommande i
+            Jaguar, Jeep och Dodge.
+            <p>
+              Vår anpassade växellådsoptimering ger:
+            <ul>
+              <li>Snabbare växlingsrespons</li>
+              <li>Förbättrad acceleration</li>
+              <li>Optimerade växlingspunkter för mer kraft och komfort</li>
+            </ul>
+            </p>
+            <hr />
+            <div class="w3-container grid-container">
+              <div class="w3-half">
+                <p class="w3-xlarge">Steg 1</p>
+                <ul>
+                  <li>Launch Control: 3400 varv</li>
+                  <li>Växlingspunkter: 7200 varv</li>
+                  <li>Växlingstid: 80 ms</li>
+                  <li>Momentbegränsning: Anpassad</li>
+                </ul>
+                <b>Pris: 3495 SEK</b>
+              </div>
+              <div class="w3-half">
+                <p class="w3-xlarge">Steg 2</p>
+                <ul>
+                  <li>Launch Control: 3600 varv</li>
+                  <li>Växlingspunkter: 7250 varv</li>
+                  <li>Växlingstid: 60 ms</li>
+                  <li>Momentbegränsning: Anpassad</li>
+                  <li>Ökat kopplingstryck</li>
+                </ul>
+                <b>Pris: 3995 SEK</b>
+              </div>
+            </div>
+          </p>
+          <hr>
+          <p>
+            Upplev skillnaden – mer kraft när du behöver den, och smidigare
+            körning varje dag. Kontakta oss idag för att lyfta din körupplevelse
+            till nästa nivå.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-third w3-center">
+          <i class="fa fa-car w3-padding-64 w3-text-red w3-margin-right"></i>
+        </div>
+
+        <div class="w3-twothird">
+          <h1>Fler tillägg</h1>
+          <h5 class="w3-padding-32">
+            För att ge dig den bästa upplevelsen kan du välja bland våra
+            exklusiva tillval. Tänk på att inte alla tillval är kompatibla med
+            alla bilmodeller. Kontakta oss så hjälper vi dig att skräddarsy en
+            lösning som passar just din bil!
+          </h5>
+
+          <h5>
+            <ul>
+              <li>A-TRAKTOR <b>4495 SEK</b></li>
+              <li>AdBlue off <b>3995 SEK</b> + demontering <b>1000 SEK</b></li>
+              <li>Cylinder off <b>1895 SEK</b></li>
+              <li>Decat <b>1495 SEK</b></li>
+              <li>DPF OFF <b>2995 SEK</b> (<b>1995 SEK</b> vid optimering)</li>
+              <li>EGR OFF <b>1995KR</b> (<b>995Kr</b> vid optimering)</li>
+              <li>DTC off <b>995kr</b></li>
+              <li>Pops & Bangs <b>2495kr</b></li>
+              <li>Pops & Bangs med AV/PÅ <b>3495kr</b></li>
+              <li>Cold Start Delete <b>949kr</b></li>
+              <li>Toppfartsspärr (VMAX)</li>
+            </ul>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">
+        Expertis som driver din bil till nya höjder.
+      </h1>
+    </div>
+
+    <!-- Footer -->
+    <footer class="grid-container w3-container w3-padding-64 w3-opacity">
+      <div id="footer">
+        <div class="w3-container w3-center">
+          <div class="w3-third w3-margin-top">
+            <h4 class="w3-xlarge">Om FTEK</h4>
+            <p class="w3-large">
+              Vi är experter på biloptimering och erbjuder skräddarsydda
+              lösningar för ökad prestanda och körupplevelse. Med lång
+              erfarenhet och fokus på säkerhet kan du alltid känna dig trygg hos
+              oss.
+            </p>
+          </div>
+          <div class="w3-third w3-margin-top">
+            <h4 class="w3-xlarge">Hitta till oss</h4>
+            <a
+              class="w3-large"
+              href="https://maps.app.goo.gl/D4zewf2zuogFD8Eb9"
+            >
+              Öppna kartor
+            </a>
+          </div>
+          <div class="w3-third w3-margin-top">
+            <h4 class="w3-xlarge">Kontakt</h4>
+            <div style="display: flex; flex-direction: column">
+              <p>
+                <i class="fa fa-phone w3-text-red"></i>
+                <a style="margin-left: 10px" href="tel:+46736752828">
+                  073-675 28 28
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-envelope w3-text-red"></i>
+                <a
+                  style="margin-left: 10px"
+                  href="mailto:Fadikibro@hotmail.com"
+                >
+                  Fadikibro@hotmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
