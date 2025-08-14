@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galleri - F-Tech Motoroptimering</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+  </head>
+  <body>
+    <div class="w3-top">
+      <nav class="w3-bar w3-card w3-left-align w3-large">
+        <a
+          class="w3-bar-item w3-button w3-hide-large w3-right w3-padding-large w3-hover-white w3-large"
+          href="javascript:void(0);"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large"
+          >Start</a
+        >
+        <div class="w3-hide-medium">
+          <a
+            href="index.html#services"
+            class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          >
+            Se alla våra tjänster
+          </a>
+        </div>
+        <div class="w3-hide-medium">
+          <a
+            href="index.html#gearbox"
+            class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          >
+            Läs mer om växellådsoptimering
+          </a>
+        </div>
+        <div class="w3-hide-medium">
+          <a
+            href="gallery.html"
+            class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          >
+            Galleri
+          </a>
+        </div>
+        <div class="w3-hide-medium">
+          <a
+            href="#footer"
+            class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          >
+            Kontakt
+          </a>
+        </div>
+      </nav>
+
+      <nav id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-large">
+        <a
+          href="index.html#services"
+          class="w3-bar-item w3-button w3-padding-large"
+        >
+          Se alla våra tjänster
+        </a>
+        <a
+          href="index.html#gearbox"
+          class="w3-bar-item w3-button w3-padding-large"
+        >
+          Läs mer om växellådsoptimering
+        </a>
+        <a
+          href="gallery.html"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        >
+          Galleri
+        </a>
+        <a
+          href="#footer"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        >
+          Kontakt
+        </a>
+      </nav>
+    </div>
+
+    <h1 style="margin-top: 50px">Galleri</h1>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <img
+          src="https://www.volkswagen.se/content/dam/onehub_pkw/importers/se/modeller/golf-r-golf-sportscombi-r/fa997247-7248-4d8c-b415-35b48fb964e9.jpg"
+          alt="Golf R"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://www.automotorsport.se/app/uploads/2023/02/1772475-2.jpg"
+          alt="Audi RS3"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://e7852c3a.delivery.rocketcdn.me/wp-content/uploads/2019/07/mercedes-amg-a-45-4matic-2019-4.jpg"
+          alt="Mercedes AMG A 45"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://www.volkswagen.se/content/dam/onehub_pkw/importers/se/modeller/golf-r-golf-sportscombi-r/fa997247-7248-4d8c-b415-35b48fb964e9.jpg"
+          alt="Golf R"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://www.automotorsport.se/app/uploads/2023/02/1772475-2.jpg"
+          alt="Audi RS3"
+        />
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://e7852c3a.delivery.rocketcdn.me/wp-content/uploads/2019/07/mercedes-amg-a-45-4matic-2019-4.jpg"
+          alt="Mercedes AMG A 45"
+        />
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightboxClose">&times;</span>
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+      <h1 class="w3-margin w3-xlarge">
+        Expertis som driver din bil till nya höjder.
+      </h1>
+    </div>
+
+    <!-- Footer -->
+    <footer class="grid-container w3-container w3-padding-64 w3-opacity">
+      <div id="footer">
+        <div class="w3-container w3-center">
+          <div class="w3-third w3-margin-top">
+            <h4 class="w3-xlarge">Om F-Tech</h4>
+            <p class="w3-large">
+              Vi är experter på biloptimering och erbjuder skräddarsydda
+              lösningar för ökad prestanda och körupplevelse. Med lång
+              erfarenhet och fokus på säkerhet kan du alltid känna dig trygg hos
+              oss.
+            </p>
+          </div>
+          <div class="w3-third w3-margin-top">
+            <h4 class="w3-xlarge">Hitta till oss</h4>
+            <a
+              class="w3-large"
+              href="https://maps.app.goo.gl/D4zewf2zuogFD8Eb9"
+            >
+              Öppna kartor
+            </a>
+          </div>
+          <div class="w3-third w3-margin-top">
+            <h4 class="w3-xlarge">Kontakt</h4>
+            <div style="display: flex; flex-direction: column">
+              <p>
+                <i class="fa fa-phone w3-text-red"></i>
+                <a style="margin-left: 10px" href="tel:+46736752828">
+                  073-675 28 28
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-envelope w3-text-red"></i>
+                <a
+                  style="margin-left: 10px"
+                  href="mailto:motoroptimering81@hotmail.com"
+                >
+                  motoroptimering81@hotmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const galleryItems = document.querySelectorAll(".gallery-item img");
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const lightboxClose = document.getElementById("lightboxClose");
+
+      galleryItems.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightboxImg.src = img.src;
+          lightbox.classList.add("active");
+        });
+      });
+
+      lightboxClose.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+      });
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.classList.remove("active");
+        }
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
