@@ -1,6 +1,12 @@
 html,
 body {
-  font-family: "K2D", sans-serif;
+  font-family: "K2D", sans-serif !important;
+}
+
+.w3-jumbo,
+.slogan,
+.custom-font {
+  font-family: "Electrolize", sans-serif !important;
 }
 
 .fa-gears,
@@ -39,7 +45,7 @@ nav {
   top: 30%;
   transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 0 0 20px white;
+  text-shadow: 0 0 3px white;
 }
 
 .grid-container {
@@ -79,13 +85,11 @@ nav {
     flex-wrap: wrap;
   }
 
-  /* Ensure the navigation items are stacked for small screens */
   #navDemo a {
     padding: 15px;
     text-align: center;
   }
 
-  /* Adjust the banner content */
   .banner-content {
     left: 50%;
     top: 200px;
@@ -93,7 +97,6 @@ nav {
     color: white;
   }
 
-  /* Make banner image smaller for tablets */
   .banner-img {
     height: 500px;
   }
@@ -110,6 +113,16 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .contact-container a {
+    display: inline-block;
+    margin-left: 6px;
+  }
+
   .banner-img {
     height: 500px;
   }
@@ -150,4 +163,18 @@ nav {
   .w3-twothird {
     width: 100%;
   }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* allow wrapping */
+  gap: 15px; /* spacing between items */
+  text-align: center;
+}
+
+.contact-container p {
+  margin: 5px 10px;
 }
