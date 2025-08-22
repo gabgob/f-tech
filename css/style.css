@@ -1,6 +1,7 @@
 html,
 body {
   font-family: "K2D", sans-serif !important;
+  overflow-x: hidden;
 }
 
 .w3-jumbo,
@@ -55,7 +56,7 @@ nav {
 
 
 .w3-third {
-  padding: 0 50px;
+  padding: 0 15px;
 }
 
 .footer-title {
@@ -150,7 +151,6 @@ nav {
     display: block;
   }
 
-  /* Ensure all items in services stack vertically */
   .w3-third {
     width: 100%;
   }
@@ -162,6 +162,11 @@ nav {
   .w3-twothird {
     width: 100%;
   }
+
+  .fa-gears,
+  .fa-car {
+    font-size: 120px;
+  }
 }
 
 .contact-container {
@@ -169,8 +174,8 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* allow wrapping */
-  gap: 15px; /* spacing between items */
+  flex-wrap: wrap;
+  gap: 15px;
   text-align: center;
 }
 
